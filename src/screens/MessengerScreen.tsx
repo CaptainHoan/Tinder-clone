@@ -106,18 +106,18 @@ const MessengerScreen = () => {
           />
         </TouchableWithoutFeedback>
       
-      <View className='flex-row justify-between items-center border-t-2 border-gray-400 px-6 py-2'>
-        <TextInput 
-          className=' h-10 text-black text-lg flex-1'
-          placeholderTextColor={'gray'}
-          placeholder='send message...'
-          multiline={true   }
-          value={messageInput}
-          onChangeText={setMessageInput}
-          onSubmitEditing={sendMessage}
-        />
-        <Button title="Send" color="#FF8964" onPress={sendMessage}/>
-      </View>
+        <View className='flex-row justify-between items-center border-t-2 border-gray-400 px-6 py-2'>
+          <TextInput 
+            className=' h-10 text-black text-lg flex-1'
+            placeholderTextColor={'gray'}
+            placeholder='send message...'
+            multiline={true   }
+            value={messageInput}
+            onChangeText={setMessageInput}
+            onSubmitEditing={sendMessage}
+          />
+          <Button title="Send" color="#FF8964" onPress={sendMessage}/>
+        </View>
       </KeyboardAvoidingView>
     </SafeAreaView >
   )
